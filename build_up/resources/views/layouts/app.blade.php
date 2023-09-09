@@ -12,7 +12,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
@@ -73,6 +73,19 @@
         </nav>
 
         <main class="py-4">
+            <nav class="p-6 bg-white flex justify-content-between">
+                <ul class="flex items-center">
+                    <li>
+                        <a href="" class="p-3">Home</a>
+                    </li>
+                    <li>
+                        <a href="" class="p-3">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="" class="p-3">Posts</a>
+                    </li>
+                </ul>
+            </nav>
             @yield('content')
         </main>
     </div>
